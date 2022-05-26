@@ -1,0 +1,17 @@
+[package]
+name = "curio-lib"
+version = "0.1.3"
+authors = ["Andrew Harris <andrewfromtn@protonmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version="0.2.22", features = ["macros", "io-util", "sync", "tcp", "dns", "time"] }
+serde = { version="1.0.115", features = ["derive"] }
+serde_json = { version = "1" }
+tokio-serde = { version = "0.6.1", features = ["json"] }
+tokio-util = { version="0.3.1", features = ["codec"] }
+futures = "0.3"
+chrono = "0.4.10"
+jsonwebtoken = "7.0.1"
